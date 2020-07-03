@@ -72,7 +72,7 @@ public class BasicArray {
     // Search
     // is found
     // where is found
-    // who is th biggest
+    // who is the biggest
     // where is the biggest
     public static boolean linearSearch1(int key, int[] arr) {
         boolean isFound = false;
