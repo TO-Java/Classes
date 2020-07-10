@@ -38,11 +38,12 @@ public class Str {
     }
 
     public static String extract(String s, int idx) {
+
         return s.substring(0, idx) + s.substring(idx + 1);
     }
 
-    public static String substitute(String s, int idx, char chr) {
-        return s.substring(0, idx) + chr + s.substring(idx + 1);
+    public static String substitute(String s, int idx, char ch) {
+        return s.substring(0, idx) + ch + s.substring(idx + 1);
     }
 
     public static int count(String s, char chr) {
@@ -55,14 +56,14 @@ public class Str {
         return acc;
     }
 
-    public static String replaceAll(String s, char c1, char c2) {
+    public static String replaceAll(String s, char ch1, char ch2) {
         String acc = "";
         for (int i = 0; i < s.length(); ++i) {
-            char t = s.charAt(i);
-            if (t == c1) {
-                acc += c2;
+            char temp = s.charAt(i);
+            if (temp == ch1) {
+                acc += ch2;
             } else {
-                acc += t;
+                acc += temp;
             }
         }
         return acc;
