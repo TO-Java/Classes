@@ -3,6 +3,8 @@ package Proj2;
 public class Main {
     public static void main(String[] args) {
         Team maccabiHaifa = new Team("Maccbi Haifa");
+        System.out.println(maccabiHaifa.getName());
+
         Team hapoelTelAviv = new Team("Hapoel Tel-Aviv");
         Team z = new Team("Beitar Yerushalaim");
 
