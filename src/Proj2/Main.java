@@ -1,16 +1,24 @@
 package Proj2;
 
 public class Main {
+
     public static void main(String[] args) {
+
         Team maccabiHaifa = new Team("Maccbi Haifa");
-        System.out.println(maccabiHaifa.getName());
-
         Team hapoelTelAviv = new Team("Hapoel Tel-Aviv");
-        Team z = new Team("Beitar Yerushalaim");
+        Team beitarYerushalaim = new Team("Beitar Yerushalaim");
 
-        Table ligatHahal = new Table("Ligat HaHal", 3);
-        Table ligaLeomit = new Table("Ligat Leomit", 3);
+        Team[] teams = new Team[3];
+        teams[0] = maccabiHaifa;
+        teams[1] = hapoelTelAviv;
+        teams[2] = beitarYerushalaim;
 
-        ligatHahal.AddTeam(maccabiHaifa);
+        Table firstLeague = new Table("First League", teams);
+
+        Game g1 = new Game(maccabiHaifa, beitarYerushalaim, 2, 4);
+
+        firstLeague.addGame(g1);
+
+        Game g2 = new Game(beitarYerushalaim, maccabiHaifa, 4, 0);
     }
 }

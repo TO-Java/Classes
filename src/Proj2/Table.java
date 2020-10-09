@@ -7,14 +7,12 @@ public class Table {
     private Team[] teams;
 
     // constructors
-
-    public Table(String name, int size) {
+    public Table(String name, Team[] teams) {
         this.name = name;
-        this.teams = new Team[size];
+        this.teams = teams;
     }
 
     // methods
-    public void AddTeam(Team team) {
-        this.teams[0] = team;
+    public void addGame(Game newGame) {
     }
 }
